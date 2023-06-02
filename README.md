@@ -141,17 +141,6 @@ while i<10:
   i+=1
 ```
 
-## Importing Modules
-```python
-#!/bin/python3
-import sys #system functions and parameter
-import datetime #1
-from datetime import datetime #2
-print(datetime.now())
-from datetime import datetime as dt #3
-print(dt.now())
-```
-
 ## Advanced Strings
 ```python
 my_name="Hanif"
@@ -182,6 +171,7 @@ print("My fav movie is {}.".format(movie)) #My fav movie is The Hangover.
 drinks={"sirap":2,"oren":3,"kosong":1} #air=key harga=value
 print(drinks) #{"sirap":2,"oren":3,"kosong":1}
 ```
+
 ## Importing Modules
 #Entire Modules:
 ```python
@@ -211,3 +201,18 @@ from math import *
 result = sqrt(25)
 print(result)   # Output: 5.0
 ```
+
+# Sockets
+```python
+#SOCKETS - Sockets can be used to connect two nodes together.  
+
+#!/bin/python3
+import socket
+
+HOST = '127.0.0.1'
+PORT = 7777
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #af_inet is ipv4, sock stream is a port
+s.connect((HOST,PORT))
+```
+
