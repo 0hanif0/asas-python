@@ -5,6 +5,7 @@
 print("Hello , world!")
 print('Hello , world!')
 print("""multiple lines!""")
+print("This string is"+"Awesome") #concat strings
 print('\n') new line
 #comment
 ```
@@ -15,6 +16,7 @@ print(50+50) #add
 print(50-50) #subtract
 print(50*50) #multiply
 print(50/50) #divide
+print(50+50-50*50/50) #PEMDAS
 print(50**2) #exponents
 print(50%6) #modulus
 print(50//6) #no leftovers
@@ -37,7 +39,7 @@ print(" My name is " + name + " and I am " + str(age) + " years old. ")
 ```python
 def who_am_i(): #function
   name="Hanif"
-  age=24
+  age=18
   print
 who_am_i() #calling function
 
@@ -58,6 +60,9 @@ print(multiply(7,7)) #print the store value
 def square_root(x):
   print(x**,5)
 square_root(64) #square root 64
+
+def nl():
+	print('\n') #new line
 ```
 
 ## Boolean Expressions (true or false)
@@ -106,7 +111,7 @@ def alcohol(age,money): #multiple
 print(alcohol(21,5)) #yes dapat alcohol
 ```
 
-## Lists -brackets[] 0 is the first
+## Lists[] - 0 is the first
 ```python
 movies=["movie1","movie2","movie3"]
 print(movies[1:4]) #movie1 and movie4
@@ -116,7 +121,7 @@ movies.append("new movie") #add movie at last
 movies.pop() #delete movie at last
 ```
 
-## Tuples -do not change()
+## Tuples() - do not change
 ```python
 grades=("a","b","c","d")
 print(grades[1])
@@ -172,8 +177,37 @@ movie="The Hangover"
 print("My fav movie is {}.".format(movie)) #My fav movie is The Hangover.
 ```
 
-## Dictionaries -key/value pairs{}
+## Dictionaries{} - key:value pairs
 ```python
 drinks={"sirap":2,"oren":3,"kosong":1} #air=key harga=value
 print(drinks) #{"sirap":2,"oren":3,"kosong":1}
+```
+## Importing Modules
+#Entire Modules:
+```python
+import math
+
+result = math.sqrt(25)
+print(result)   # Output: 5.0
+```
+#Specific Functions or Variables:
+```python
+from math import sqrt
+
+result = sqrt(25)
+print(result)   # Output: 5.0
+```
+#Modules with an Alias:
+```python
+import math as m
+
+result = m.sqrt(25)
+print(result)   # Output: 5.0
+```
+#All Functions and Variables:
+```python
+from math import *
+
+result = sqrt(25)
+print(result)   # Output: 5.0
 ```
