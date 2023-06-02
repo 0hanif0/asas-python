@@ -202,7 +202,7 @@ result = sqrt(25)
 print(result)   # Output: 5.0
 ```
 
-# Sockets
+## Sockets
 ```python
 #SOCKETS - Sockets can be used to connect two nodes together.  
 
@@ -216,3 +216,92 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #af_inet is ipv4, sock str
 s.connect((HOST,PORT))
 ```
 
+## User Input
+```python
+#USER INPUT
+
+x = float(input("Give me a number: "))
+o = input("Give me an operator: ")
+y = float(input("Give me yet another number: "))
+
+if o == "+":
+	print(x + y)
+elif o == "-":
+	print(x - y)
+elif o == "/":
+	print(x / y)
+elif o == "*":
+	print(x * y)
+elif o == "**":
+	print(x ** y)
+else:
+	print("Unknown operator.")
+```
+
+## Read and Write File
+```python
+# Open the file in read mode
+file = open("example.txt", "r")
+
+# Read the entire content
+content = file.read()
+print(content)
+
+# Read a single line
+line = file.readline()
+print(line)
+
+# Read all lines
+lines = file.readlines()
+print(lines)
+
+# Close the file
+file.close()
+
+# Open the file in write mode
+file = open("example.txt", "w")
+
+# Write content to the file
+file.write("Hello, World!\n")
+file.write("This is a new line.")
+
+# Close the file
+file.close()
+
+# Open the file in append mode
+file = open("example.txt", "a")
+
+# Append content to the file
+file.write("\nThis is appended content.")
+
+# Close the file
+file.close()
+```
+
+## Classes and Objects
+```python
+# class
+class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def bark(self):
+        print("Woof!")
+
+    def display_info(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+	
+# object
+# Create objects of the Dog class
+dog1 = Dog("Buddy", 5)
+dog2 = Dog("Max", 3)
+
+# Call methods on the objects
+dog1.bark()               # Output: "Woof!"
+dog1.display_info()       # Output: "Name: Buddy", "Age: 5"
+
+dog2.bark()               # Output: "Woof!"
+dog2.display_info()       # Output: "Name: Max", "Age: 3"
+```
