@@ -173,28 +173,28 @@ print(drinks) #{"sirap":2,"oren":3,"kosong":1}
 ```
 
 ## Importing Modules
-#Entire Modules:
+- Entire Modules:
 ```python
 import math
 
 result = math.sqrt(25)
 print(result)   # Output: 5.0
 ```
-#Specific Functions or Variables:
+- Specific Functions or Variables:
 ```python
 from math import sqrt
 
 result = sqrt(25)
 print(result)   # Output: 5.0
 ```
-#Modules with an Alias:
+- Modules with an Alias:
 ```python
 import math as m
 
 result = m.sqrt(25)
 print(result)   # Output: 5.0
 ```
-#All Functions and Variables:
+- All Functions and Variables:
 ```python
 from math import *
 
